@@ -8,8 +8,6 @@ from currency_converter import CurrencyConverter
 def get_money_interval(difficulty):
     difficulty = int(difficulty)
     d = difficulty
-    global t
-    global result_convert
     t = random.randint(1, 100)
     a = CurrencyConverter()
     result_convert = int(a.convert(t, "USD", "ILS"))
